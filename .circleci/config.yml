@@ -27,6 +27,12 @@ jobs:
           name: install-npm
           command: npm install
       - run:
+          name: install-mocha
+          command: npm install mocha -D
+      - run:
+          name: install-chai
+          command: npm install chai
+      - run:
           name: test-run
           command: npm run test
       - save_cache:
